@@ -33,11 +33,11 @@ class TsContext {
 }
 
 // Create a context with the AscendingSortStrategy
-const tscontext = new Context(new AscendingSortStrategy());
+const tscontext = new TsContext(new AscendingSortStrategy());
 // Execute the context's strategy on an array (will sort)
-context.execute(['a', 'b', 'c', 'd', 'e']); // Output: a,b,c,d,e
+tscontext.execute(['a', 'b', 'c', 'd', 'e']); // Output: a,b,c,d,e
 
 // Create a context with the ReverseStrategy
-const tscontext2 = new Context(new ReverseStrategy());
+const tscontext2 = new TsContext(new TSReverseStrategy());
 // Execute the context's strategy on an array (will reverse)
-context2.execute(['a', 'b', 'c', 'd', 'e']); // Output: e,d,c,b,a
+tscontext2.execute(['a', 'b', 'c', 'd', 'e']); // Output: e,d,c,b,a
