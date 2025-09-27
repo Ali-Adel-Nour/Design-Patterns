@@ -19,6 +19,8 @@ class Ship {
   }
 }
 
+// without the creator this is a simple factory 
+
 
  // Creator
 class Logistics {
